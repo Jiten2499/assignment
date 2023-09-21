@@ -1,0 +1,18 @@
+const express = require('express');
+const router = express.Router();
+const itemController = require('../controllers/itemController');
+console.log("routes 2");
+// Create a new item (POST request)
+router.get('/Intensity', itemController.getIntensityData);
+router.get('/Likelihood', itemController.getLikelihoodData);
+router.get('/Relevance', itemController.getRelevanceData);
+router.get('/Year', itemController.getYearData);
+router.get('/Country', itemController.getCountryData);
+router.get('/Topics', itemController.getTopicsData);
+router.get('/Region', itemController.getRegionData);
+router.get('/City', itemController.getCityData);
+
+
+
+
+module.exports = router;
